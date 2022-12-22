@@ -1,0 +1,319 @@
+.firework.purple {
+  top: 0 !important;
+  left: 0 !important;
+  width: 3.2rem !important;
+  height: 3.2rem !important;
+}
+.firework.on.purple .flake_1,
+.firework.on.purple .flake_2 {
+  animation-name: yellow-purse;
+}
+.firework.yellow {
+  top: 1rem !important;
+  left: 2.5rem !important;
+  width: 2.3rem !important;
+  height: 2.3rem !important;
+}
+.firework.on.yellow .flake_1,
+.firework.on.yellow .flake_2 {
+  animation-name: purple-purse;
+}
+.firework.on.yellow .flake_1 {
+  animation-delay: 0.81s;
+}
+.firework.on.yellow .flake_2 {
+  animation-delay: 0.91s;
+}
+.firework.pink {
+  top: 3rem !important;
+  left: 1.4rem !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+}
+.firework.on.pink .flake_1,
+.firework.on.pink .flake_2 {
+  animation-name: pink-purse;
+}
+.firework.on.pink .flake_1 {
+  animation-delay: 1s;
+}
+.firework.on.pink .flake_2 {
+  animation-delay: 1.1s;
+}
+
+.fire {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 3px / 2);
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background: #43a2ca;
+  opacity: 0;
+}
+
+.firework.on .fire {
+  -webkit-animation: firework 0.6s linear 1;
+  animation: firework 0.6s linear 1;
+}
+
+.fire2 {
+  background: #79b8d6;
+}
+
+.firework.on .fire2 {
+  -webkit-animation: firework 0.4s linear 1;
+  animation: firework 0.4s linear 1;
+}
+
+@-webkit-keyframes firework {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  35% {
+    bottom: 30%;
+    height: 15px;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 70%;
+    height: 1px;
+    opacity: 0;
+  }
+}
+
+@keyframes firework {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  35% {
+    bottom: 30%;
+    height: 15px;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 70%;
+    height: 1px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    fill: #43a2ca;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    fill: #43a2ca;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+.spark_1,
+.spark_2,
+.spark_3 {
+  fill: transparent;
+}
+
+.firework.on .spark_1,
+.firework.on .spark_2,
+.firework.on .spark_3 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.firework.on .spark_1 {
+  -webkit-animation-delay: 0.41s;
+  animation-delay: 0.41s;
+}
+
+.firework.on .spark_2 {
+  -webkit-animation-delay: 0.51s;
+  animation-delay: 0.51s;
+}
+
+.firework.on .spark_3 {
+  -webkit-animation-delay: 0.61s;
+  animation-delay: 0.61s;
+}
+
+@-webkit-keyframes pulse2 {
+  0% {
+    stroke: #79b8d6;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    stroke: #79b8d6;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+.flake_1,
+.flake_2 {
+  stroke: transparent;
+}
+
+.firework.on .flake_1,
+.firework.on .flake_2 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: purse2;
+  animation-name: purse2;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.firework.on .flake_1 {
+  -webkit-animation-delay: 0.61s;
+  animation-delay: 0.61s;
+}
+
+.firework.on .flake_2 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+@-webkit-keyframes yellow-purse {
+  0% {
+    stroke: rgba(255, 255, 121, 0.75);
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes yellow-purse {
+  0% {
+    stroke: rgba(255, 255, 121, 0.75);
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@-webkit-keyframes pink-purse {
+  0% {
+    stroke: #ffb6c1;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes pink-purse {
+  0% {
+    stroke: #ffb6c1;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@-webkit-keyframes red-purse {
+  0% {
+    stroke: #ff0a33;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes red-purse {
+  0% {
+    stroke: #ff0a33;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@-webkit-keyframes blue-purse {
+  0% {
+    stroke: #2370ff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes blue-purse {
+  0% {
+    stroke: #2370ff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@-webkit-keyframes purple-purse {
+  0% {
+    stroke: #e1d7ff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes purple-purse {
+  0% {
+    stroke: #e1d7ff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@-webkit-keyframes white-purse {
+  0% {
+    stroke: #fff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+@keyframes white-purse {
+  0% {
+    stroke: #fff;
+  }
+  70% {
+    stroke: transparent;
+  }
+}
+
+.firework {
+  position: absolute;
+}
+
+.firework__wrapper {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+}
